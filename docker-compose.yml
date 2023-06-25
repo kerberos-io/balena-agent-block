@@ -1,0 +1,19 @@
+version: '2.1'
+
+volumes:
+    kerberosagent_recordings:
+    kerberosagent_snapshots:
+    kerberosagent_config:
+
+services:
+
+    # https://github.com/kerberos/agent
+    agent:
+        image: kerberos/agent:latest
+        network_mode: host
+        tty: true
+        restart: always
+        volumes:
+            - 'kerberosagent_recordings:/home/agent/data/recordings:rw'
+            - 'kerberosagent_snapshots:/home/agent/data/snapshots:rw'
+            - 'kerberosagent_config:/home/agent/data/config:rw'
