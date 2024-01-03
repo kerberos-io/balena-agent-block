@@ -9,7 +9,7 @@ services:
 
     # https://github.com/kerberos/agent
     agent:
-        image: kerberos/agent:latest
+        image: kerberos/agent:9d99065
         network_mode: host
         tty: true
         restart: always
