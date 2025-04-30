@@ -2,7 +2,7 @@ name: agent
 description: >-
   Kerberos Agent is a cutting edge video surveillance management system 
   made available as Open Source under the MIT License
-version: 3.0.0
+version: v3.3.18
 type: sw.block
 assets:
   repository:
