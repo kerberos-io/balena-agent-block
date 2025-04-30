@@ -8,7 +8,7 @@ volumes:
 services:
   # https://github.com/kerberos/agent
   agent:
-    image: kerberos/agent:83ba7ba
+    image: kerberos/agent:v3.3.18
     network_mode: host
     tty: true
     restart: always
